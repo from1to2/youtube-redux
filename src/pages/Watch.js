@@ -8,6 +8,7 @@ const Watch = () => {
     const [query,setQuery]  = useSearchParams();
     const id=query.get('id')
     const channelId = query.get('channelId');
+    //query는 어떤역할인지.
     const {data} = useSelector((state) => state.video);
     const videoData10 = data.filter((item,idx)=>idx<10)
 

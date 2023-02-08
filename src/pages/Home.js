@@ -7,15 +7,15 @@ import {videoListLayout} from './../store/video/videoSlice';
 
 const Home = () => {
   const dispatch = useDispatch();
-  const {listlayout} = useSelector((state) => state.video);
+  const {listLayout} = useSelector((state) => state.video);
   useEffect(()=> {
     dispatch(videoListLayout('grid'))
-  },[])
+  },[dispatch])
     return (
         <>
           <SideMenu  /> 
           <section className='main-content'>
-           {listlayout && <VideoList display={listlayout} />}
+           {listLayout && <VideoList display={listLayout} />}
           </section>
         </>
     );

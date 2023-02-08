@@ -12,7 +12,7 @@ const VideoView  = ({id,channelId}) => {
     useEffect(()=>{
         const channelIdInfo = channelUrl(channelId);
         dispatch(getChannelInfo(channelIdInfo))
-    },[])
+    },[dispatch, channelId])
     return (
         <div className='playVideoBox'>
             <div className='iframeBox'>

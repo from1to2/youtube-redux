@@ -48,6 +48,7 @@ const videoSlice =  createSlice({
         builder.addCase(getVideoList.fulfilled,(state,action)=>{
             state.data=action.payload;
             state.loading=false;
+            console.log(state.data);
         })
         builder.addCase(getVideoList.rejected,(state,action)=>{
             state.loading=true;

@@ -8,12 +8,13 @@ import {videoUrl} from './../../lib/api';
 import {MoonLoader} from 'react-spinners';
 
 const VideoList = ({display}) => {
+ 
   const dispatch = useDispatch();
   const {data,loading}= useSelector((state) =>state.video);
-  useEffect(() => {
-      dispatch(getVideoList(videoUrl))
+    useEffect(() => {
+      dispatch(getVideoList(videoUrl));
   },[])
-  
+
   if(loading) {
       return (
         <MoonLoader 

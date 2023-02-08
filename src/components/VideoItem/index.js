@@ -5,7 +5,7 @@ import {useNavigate} from 'react-router-dom';
 const VideoItem = ({item,value}) => {
   let id;
   if(typeof value.id === 'string'){
-      id=value.id
+      id=value.id;
   }else if(typeof value.id === 'object') {
       id=value.id.videoId;
   }
