@@ -1,4 +1,5 @@
 
+// const API_KEY = process.env.REACT_APP_API_KEY;
 const API_KEY=`AIzaSyCYhG0aMqcuo3MZwzUF-bi7LgVE-5wJkGs`;
 
 export const videoUrl=`https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=30&regionCode=kr&key=${API_KEY}`
